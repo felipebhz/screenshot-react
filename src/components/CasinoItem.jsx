@@ -10,7 +10,7 @@ function CasinoItem({ casino: { website, content } }) {
 
             <div className="card shadow-2xl w-380 m-20">
                 <figure>
-                    <img src={content} />
+                    <img src={content} alt="casinoimg" />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">New Casino for You</h2>
