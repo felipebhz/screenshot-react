@@ -1,21 +1,28 @@
-import CasinoContext from '../context/CasinoContext';
-
 function CasinoItem({ casino: { website, content } }) {
     return (
         <>
             {/* <img src={content} width={800} />
             <p>{website}</p> */}
 
-            <div className="card lg:card-side bg-base-100 shadow-xl mb-20">
+            {/* <div className="mockup-window border border-base-700">
+  <div className="flex justify-center px-4 py-16 border-t border-base-300">Hello!</div>
+</div> */}
+
+            <div class="card shadow-2xl w-380 m-20">
                 <figure>
-                    <img src={content} alt="Album" />
+                    <img src={content} />
                 </figure>
-                <div className="card-body">
-                    <h2 className="card-title">Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur expedita mollitia esse quasi quibusdam fugiat nesciunt ipsam saepe sit deserunt modi officia quos nisi dignissimos atque, ullam necessitatibus illo. Illo.</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Visit Casino Website</button>
+                <div class="card-body">
+                    <h2 class="card-title">DaisyUI Card</h2>
+                    <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                    <div className="rating">
+                        <input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" />
+                        <input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" checked />
+                        <input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" />
+                        <input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" />
+                        <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-200" />
                     </div>
+                    <button class="btn btn-accent">accent</button>
                 </div>
             </div>
         </>

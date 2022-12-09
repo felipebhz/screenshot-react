@@ -1,5 +1,4 @@
 import { CasinoContextProvider } from './context/CasinoContext';
-import { useContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Navbar from './components/layout/Navbar';
@@ -9,8 +8,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 
 import './App.css';
-import CasinoContext from './context/CasinoContext';
-import CasinoList from './components/CasinoList';
 
 
 function App() {

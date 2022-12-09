@@ -3,7 +3,6 @@ import CasinoItem from "./CasinoItem";
 
 export default function Users() {
     const { casinos } = useCasinoData()
-    console.log(casinos)
     return (
         <>
         {casinos.map((casino) => (
