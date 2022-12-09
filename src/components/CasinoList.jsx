@@ -1,11 +1,9 @@
-import React from "react"
 import { useCasinoData } from "../context/CasinoContext"
 import CasinoItem from "./CasinoItem";
 
-
 export default function Users() {
     const { casinos } = useCasinoData()
-    //console.log(casinos)
+    console.log(casinos)
     return (
         <>
         {casinos.map((casino) => (
