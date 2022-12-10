@@ -3,9 +3,7 @@ import App from './App';
 
 test('renders home page', () => {
   render(<App />);
-  expect(getByAltText(document.documentElement, 'casinoimg')).toBeInTheDocument()
-  //expect(getByTestId(document.documentElement, 'svg-element')).toBeInTheDocument()
-  //expect(queryByTestId(document.documentElement, 'does-not-exist'),).not.toBeInTheDocument()
+  expect(screen.getByRole('main', 'img', {alt: /casinoimg/i})).toBeInTheDocument()
 });
 
 
