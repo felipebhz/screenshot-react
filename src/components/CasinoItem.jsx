@@ -1,13 +1,6 @@
 function CasinoItem({ casino: { website, content } }) {
     return (
         <>
-            {/* <img src={content} width={800} />
-            <p>{website}</p> */}
-
-            {/* <div className="mockup-window border border-base-700">
-  <div className="flex justify-center px-4 py-16 border-t border-base-300">Hello!</div>
-</div> */}
-
             <div className="card shadow-2xl w-380 m-20">
                 <figure>
                     <img src={content} alt="casinoimg" />
