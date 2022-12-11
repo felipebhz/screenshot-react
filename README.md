@@ -40,6 +40,8 @@ Frontend (ReactJS) **this application** and Backend (Laravel) another applicatio
 ### Softwares used in this application
 - NodeJS 18
 - React JS latest
+- Daisyui
+- Tailwind CSS
 - Docker Desktop latest (Windows)
 ---
 ## License
