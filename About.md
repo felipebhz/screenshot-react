@@ -31,4 +31,15 @@ I have written simple tests for the most common parts, so I could show my abilit
 
 ### Docker
 
-Docker containers have been implemented using the most simple requirements not last because, the front end relies more on the realm of NodeJS + Application's files.
+Docker containers have been implemented using the most simple requirements not last because, the front end relies more on the realm of `NodeJS + Application's files`.
+
+### Improvement suggestions
+Add the possibility to:
+- Add to favorites
+- Add user's prefered sites on the top
+- Create some lazy loading to rely on the matter of networks slowness, yet showing a wireframe (just like mobile apps: eg.: Facebook, Twitter...)
+- Ability to input a casino website and add as suggestion for reviews
+
+**Code suggestions**
+ - Use reducers files and actions files to make it easier to scale and maintain.
+ - Use libs to detect internet speed on the client and bring from the backend a image size that suits the user's internet speed.
