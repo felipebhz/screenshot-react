@@ -47,3 +47,7 @@ Frontend (ReactJS) **this application** and Backend (Laravel) another applicatio
 ## License
 
 This application is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+### Short video of the application running
+[Video Download](https://drive.google.com/file/d/1T6SuKFnq0yxCjjetXHiC-P-rQuY1yDSJ/view?usp=sharing)
+
