@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+## About Screenshot App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**This guide will show how to setup the Frontend in ReactJS.**
 
-## Available Scripts
+This is an application to provide updated screenshots of the best casinos websites.
 
-In the project directory, you can run:
+With this application you will have access to the reviews and the screenshots of the most common casinos websites in the world.
 
-### `npm start`
+Some of them are:
+- [Betboo](https://www.betboo.com)
+- [Bet365](https://www.bet365.com)
+- [Awesome Casino](https://www.awesomecasino.com)
+- [Betfair](https://www.betfair.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to run this application
+- Prerequisites:
+    - Docker Installed on the Host Machine
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Full Application is made up of 2 independent parts.
+Frontend (ReactJS) **this application** and Backend (Laravel) another application found here: [Backend in Laravel](https://github.com/felipebhz/screenshot-laravel)
 
-### `npm test`
+**First Step:**
+- Clone this repository
+    - `cd` into the directory where the repository has been cloned
+    - `docker-compose up -d --force-recreate --build`
+*Command to start and build (or rebuild) docker containers and install dependencies from React JS using `npm install`*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Docker can take more than 5 or 10 minutes (at least on Windows 11 with WSL2 to finish building all the images and installing all the depencies. Is advised to take a look at docker logs to see if what is the output and if this is similar to this:
+![Docker output after React JS build](https://i.ibb.co/C2cRfJG/image.png)
 
-### `npm run build`
+	- Open your web browser and goto http://localhost:3000 to see the application's home page.
+*Keep in mind this application will call the Laravel API on the backend, which must be running on Docker or at least be able to respond when hit the localhost:8001 endpoint*
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Troubleshooting 
+- Docker can take a while to start, build and load all the dependencies on Windows using WSL2.
+- Nginx access log output can be found on `/var/log/nginx/access.log` and error log can be found on `/var/log/nginx/error.log`
+- Stop any other services you may have running on your machine before starting docker. Ports can be in conflict.
+---
+### Softwares used in this application
+- NodeJS 18
+- React JS latest
+- Docker Desktop latest (Windows)
+---
+## License
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This application is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
