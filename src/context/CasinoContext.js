@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect, createContext } from "react";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL
 
 const CasinoContext = createContext();
 
@@ -6,7 +7,7 @@ export function CasinoContextProvider({ children }) {
     const [casinos, setCasinos] = useState([]);
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`http://127.0.0.1:8000/screenshots/`)
+            const response = await fetch(`${BACKEND_URL}screenshots/`)
             const data = await response.json()
             setCasinos(data);
         }
