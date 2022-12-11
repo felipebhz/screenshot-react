@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  react:
+    image: node:18
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./:/var/www/react
+    working_dir: /var/www/react
+    command: sh -c "npm install && npm run start"
